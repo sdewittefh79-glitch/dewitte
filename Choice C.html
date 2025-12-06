@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choice C</title>
+<style>
+h2 {
+   font-family: Arial, Helvetica, sans-serif;
+   position: absolute;
+   top: 20px;
+   left: 35px;
+   color: #251573;
+   font-size: 40px;
+}
+
+video {
+   position: absolute;
+   top: 120px;
+   align: center;
+
+</style>
+</head>
+<body>
+
+    <h2>Perfect; just what I need. Thank you!</h2>
+
+    <video id="myVideo" width="1520" height="600" controls autoplay>
+        <source src="scenarioc.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <script>
+        // Get the video element by its ID
+        const videoElement = document.getElementById('myVideo');
+
+        // Add an event listener for when the video has finished playing
+        videoElement.addEventListener('ended', (event) => {
+            // Redirect the user to the new page
+            window.location.href ='file:///C:/Users/sean_/Downloads/seansite%20w%20wheelspin%2011.30.25/vyond/redirect%20page.html';
+        });
+    </script>
+
+</body>
+</html>

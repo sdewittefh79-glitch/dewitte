@@ -1,0 +1,142 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body{
+   background-color: #34495e;
+   width: 100%
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   aligh-items: center;
+}
+
+h1{
+   color: #f7f1d2;
+   text-align: center;
+   font-family: Arial, sans-serif;
+   font-size: 48px; 
+   position: absolute;
+   top: 4%;
+ }
+
+h4{
+   color: #cee8f5;
+   text-align: center;
+   font-family: Arial, sans-serif;
+   font-size: 28px; 
+   position: absolute;
+   top: 680px;
+ }
+
+a:link {
+  color: #cee8f5;
+}
+
+a:visited {
+  color: #cee8f5;
+}
+
+a:hover {
+  color: lavender;
+}
+
+.container{
+  width: 500px;
+  height: 500px;
+  background-color: #ccc;
+  border-radius: 50%;
+  border: 15px solid #ddd;
+  position: relative;
+  top: 150px;
+  transition: 5s;
+  overflow: hidden;
+}
+  
+.container div{
+  width: 200px;
+  height: 50%;
+  position: absolute;
+  clip-path: polygon(100% 0, 50% 100%, 0 0);
+  transform: translate(-50%);
+  transform-origin: bottom;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: #fff;
+  Left: 135px;
+}
+
+.container .one{
+  background-color: #0066ff;
+  Left: 50%;
+}
+.container .two{
+  background-color: #ff9800;
+  transform: rotate(45deg);
+}
+.container .three{
+  background-color: #e91e63;
+  transform: rotate(90deg);
+}
+.container .four{
+  background-color: #999999;
+  transform: rotate(135deg);
+}
+.container .five{
+  background-color: #e6db07;
+  transform: rotate(180deg);
+}
+.container .six{
+  background-color: #9807e6;
+  transform: rotate(225deg);
+}
+.container .seven{
+  background-color: #07d3e6;
+  transform: rotate(270deg);
+}
+.container .eight{
+  background-color: #e60725;
+  transform: rotate(315deg);
+} 
+
+.arrow{
+  position: absolute; 
+  top: 131px;
+  left: 47.5%;
+  transform: translateX<-50%);
+  transform: rotate(180deg); 
+  color: #33cc33;
+  z-index: 10;
+ }
+
+.arrow::before{
+  content: "\25B2"; 
+  font-size: 80px;
+  
+}
+
+#spin{ 
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  width: 90px;
+  height: 90px; 
+  border-radius: 50%;
+  curser: pointer;
+  z-index: 10;
+}
+
+#spin:hover {
+  background-color: #00ff00;
+ }
